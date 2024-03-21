@@ -1,13 +1,20 @@
+// print Jai Ganesh using function/method / only in main class we create function/method
+
+import java.util.*;
+
 class Program2
 {
-    public static void main(String arg[]){
-        int i , j , ans;
-         i=10;
-         j=11;
 
-         ans = i+j;
-
-         System.out.println("Addition is "+ans);
+    public static void Display()
+    {
+        System.out.println("Jai Ganesh");
     }
     
+
+    
+    public static void main(String Arr[])
+    {
+        Display();
+
+    }
 }
