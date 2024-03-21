@@ -1,20 +1,9 @@
-//Accept input from user and multiply using function/Method
+//Accept input from user and multiply it 
 
 import java.util.*;
 
-class Program7
+class Program6
 {
-
-
-    public static int Multiplication(int iValue1,int iValue2)
-    {
-        int iAns = 0;
-
-        iAns = iValue1 * iValue2;
-
-        return iAns ;
-
-    }
     public static void main(String[] args) {
         
         Scanner sobj = new Scanner(System.in);
@@ -27,7 +16,7 @@ class Program7
         System.out.println("Enter Second Number");
         iNo2 = sobj.nextInt();
 
-        iMult = Multiplication(iNo1,iNo2);
+        iMult = iNo1 * iNo2;
 
         System.out.println("First Number is : " + iMult);
         

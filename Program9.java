@@ -1,8 +1,8 @@
-//Accept input from user and check that number is divisible by 5 or not
+//Accept input from user and check that number is divisible by 5 or not by exchanging if else
 
 import java.util.*;
 
-class Program8
+class Program9
 {
 
 
@@ -12,7 +12,7 @@ class Program8
 
         iAns = iValue % 5;
 
-        if (iAns == 0) {
+        if (iAns != 0) {
             return 1;
         }
         else{
@@ -31,7 +31,7 @@ class Program8
 
         iRet = DivisibleByFive(iNo);
 
-        if(iRet == 0)
+        if(iRet != 0)
         {
             System.out.println(+ iNo + " is not divisible by 5");
         }

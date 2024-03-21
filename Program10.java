@@ -1,49 +1,49 @@
+//Accept input from user and check that number is divisible by 5 by boolean(true or false)
+
 import java.util.*;
 
-public class Program10
+class Program10
 {
 
 
-	public static boolean DivisibleByFive(int iNo)
-	{
-		int iAns = 0;
+    public static boolean DivisibleByFive(int iValue)
+    {
+        int iAns = 0;
+    
 
-		iAns = iNo % 5;
+        iAns = iValue % 5;
 
-		if(iAns == 0)
-		{
-			return true;
-		}
-		else
-		{
-			return false;
-		}
-	}
+        if (iAns == 0) 
+        {
+            return true;
+        }
+        else{
+            return false;
+        }
 
-	public static void main(String[] args) {
-		
-		Scanner sobj = new Scanner(System.in);
-		
-		System.out.println("Enter the Number");
-		
-		int iValue = sobj.nextInt();
-		
-		boolean iRet = DivisibleByFive(iValue);
+    }
+    public static void main(String[] args) {
+        
+        Scanner sobj = new Scanner(System.in);
 
-		if(iRet == false)
-		{
-			System.out.println(iValue + " is not divisible by 5");
-		}
-		else
-		{
-			System.out.println(iValue + " is divisible by 5");
-		}
+        int iNo = 0;
+        boolean bRet = false;
+
+        System.out.println("Enter Number");
+        iNo = sobj.nextInt();
+
+        bRet = DivisibleByFive(iNo);
+
+        if(bRet == false)
+        {
+            System.out.println(+ iNo + " is not divisible by 5");
+        }
+        else{
+            System.out.println(+ iNo + " is  divisible by 5");
+        }
+
+        
 
 
-		
-		
-				
-
-	}
-
+    }
 }
